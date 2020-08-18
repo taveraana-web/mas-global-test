@@ -1,0 +1,9 @@
+﻿.block {
+    margin: 22px 0px 22px 0px;
+}
+
+.table .thead-blue th {
+    color: white;
+    background-color: var(--blue);
+    border-color: var(--blue);
+}

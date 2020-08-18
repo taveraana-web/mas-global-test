@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Employees";
+}
+
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <h1 class="block">Employees</h1>
+
+            <form id="form">
+                <div class="input-group mb-4">
+                    <input type="number" class="form-control" placeholder="Employee Id" aria-label="Employee Id"
+                           aria-describedby="button-addon2" id="id-input">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="submit" id="search-btn">Search</button>
+                    </div>
+                </div>
+            </form>
+            <div class="table-responsive">
+
+                <table class="table table-hover">
+                    <thead class="thead-blue">
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Role</th>
+                            <th scope="col">Hourly Salary</th>
+                            <th scope="col">Monthly Salary</th>
+                            <th scope="col">Annual Salary</th>
+                        </tr>
+                    </thead>
+                    <tbody id="t-body">
+                        <tr>
+                            <th colspan="7" style="text-align: center;">Loading ...</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        </div>
+    <script src="~/Scripts/employee.js"></script>
